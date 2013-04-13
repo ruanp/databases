@@ -5,9 +5,12 @@ var mysql = require('mysql');
 /* You'll need to fill the following out with your mysql username and password.
  * database: "chat" specifies that we're using the database called
  * "chat", which we created by running schema.sql.*/
+
+
+
 var dbConnection = mysql.createConnection({
-  user: "",
-  password: "",
+  user: "placeholder",
+  password: "password",
   database: "chat"
 });
 

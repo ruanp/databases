@@ -1,0 +1,90 @@
+body {
+    background: #eee;
+    text-align: center;
+    padding: 0 25px;
+}
+
+#main {
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    background: white;
+    padding: 50px 60px;
+    border: solid #ddd;
+    border-width: 0 1px 1px 1px;
+}
+
+#main h1 {
+    margin-top: 0;
+    font-size: 35px;
+}
+
+#main ul {
+    padding-left: 20px;
+}
+
+#main .error {
+    border: 1px solid red;
+    background: #FDEFF0;
+    padding: 20px;
+}
+
+#main .success {
+    margin-top: 25px;
+}
+
+#main .success code {
+    font-size: 12px;
+    color: green;
+    line-height: 13px;
+}
+
+#sidebar {
+  height: 500px;
+}
+
+.highlight, span.username.highlight {
+  font-weight: bold;
+  color: red;
+  font-size: 14px;
+}
+
+/* Messages */
+div.message {
+
+}
+
+span.username {
+  font-weight: bold;
+  font-size: 16px;
+  color: blue;
+}
+
+span.time {
+  font-size: 12px;
+  color: gray;
+  font-style: italic;
+}
+
+span.message {
+
+}
+
+/* Sidebar */
+div#chatrooms {
+  border: 1px solid black;
+}
+
+div#chatrooms li {
+  list-style: none;
+  text-align: left;
+}
+
+div#friends {
+  border: 1px solid black;
+}
+
+div#friends li {
+  list-style: none;
+  text-align: left;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chat with JSON!</title>
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script type="text/javascript" src="http://raw.github.com/timrwood/moment/2.0.0/min/moment.min.js"></script>
+    <script src="http://raw.github.com/wycats/handlebars.js/1.0.0-rc.3/dist/handlebars.js"></script>
+    <script src="public/js/setup.js"></script>
+    <script src="public/js/chat.js"></script>
+    <script id="message-template" type="text/x-handlebars-template">
+      <div class="message" data-roomname="{{roomname}}">
+        (<span class="time">{{time}}</span>)
+        <span class="username {{#if highlight}} highlight {{/if}}">{{username}}</span>:
+        <span class="message">{{message}}</span>
+      </div>
+    </script>
+  </head>
+  <body>
+    <div id="sidebar" class="span4">
+      <div id="chatrooms">
+        <h2>Chat Rooms</h2>
+        <ul></ul>
+      </div>
+      <div id="friends">
+        <h2>Friends</h2>
+        <ul></ul>
+      </div>
+    </div>
+    <div id="main" class="span8">
+      <h1>ChatBot</h1>
+      <input type="text" class="input-message span5" placeholder="Write your message"></input>
+      <div id="messages">
+      </div>
+    </div>
+  </body>
+</html>
